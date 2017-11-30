@@ -1,0 +1,387 @@
+
+
+body{
+  color: #666;
+  font-size: 12px;
+}
+a{
+  color: #666;
+}
+/*网站顶部区域*/
+.header{}
+.h-header .top-nav{
+  margin: 0 auto;
+  width: 1190px;
+  height: 74px;
+  padding-top: 24px;
+
+}
+
+/* 顶部logo,搜索框，用户导航区域 */
+.h-header .top-nav .logo{
+  float: left;
+}
+
+.top-nav .logo h1{
+  position: absolute;
+  text-indent: -9999px;
+}
+
+/* 顶部用户信息区域 */
+.h-header .top-nav .user-nav{
+  float: right;
+  padding-top: 5px;
+}
+
+/* 顶部用户信息区域标签浮动 */
+.h-header .user-nav .user-nav-list{
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  margin: 0 11px 0 14px;
+}
+
+/* 顶部用户信息区域用户头像 */
+.h-header .user-nav .avatar{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* 顶部用户信息区域消息提示及数量显示 */
+.h-header .user-nav .msg-wrap{
+  position: relative;
+  top:15px;
+  width: 34px;
+  height: 40px;
+  background: url("../img/sprite-msg.png") no-repeat left top;
+}
+
+.h-header .user-nav .msg{
+  position: relative;
+  top:-15px;
+  left: 19px;
+  display: inline-block;
+  width: 34px;
+  height: 40px;
+  line-height: 16px;
+  padding-left: 4px;
+  background: url("../img/sprite-msg.png") no-repeat left bottom;
+}
+
+/* 用户头像div与a标签在同一行 */
+.h-header .user-nav .username{
+  display: inline-block;
+}
+
+/* 用户名li设置绝对定位浮动列表相对定位 */
+.h-header .user-nav .user{
+  position: relative;
+}
+
+/* 鼠标移动至上级li标签后显示隐藏的浮动列表 */
+.h-header .user-nav .user:hover .user-menu-cover{
+  display: block;
+  z-index: 100;
+
+}
+
+/* 列表浮动不破坏原样式 */
+.h-header .user-nav .user-menu-cover{
+  position: absolute;
+  left: 0px;
+  top:43px;
+  display: none;
+}
+
+/* 弹出用户菜单层的li */
+.h-header .user-nav .user-menu-cover li{
+  border: 1px solid #f1f1f1;
+  width: 124px;
+  height: 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* 鼠标移动至隐藏的li变换背景颜色 */
+.h-header .user-nav .user-menu-cover li:hover{
+  background-color: #cecece;
+}
+
+/* 设置弹出来的用户菜单 */
+.user-menu-cover{
+  display: inline-block;
+}
+
+/* 倒三角符号显示 */
+.h-header .user-nav i.icon{
+  display: inline-block;
+  float: right;
+  margin: 17px 0 0 7px;
+ 
+}
+
+.h-header .user-nav .msg-num{
+  color: #fff;
+}
+
+
+.h-header .top-nav .search{
+  margin: 0 265px 0 367px;
+  position: relative;
+  padding-top: 10px;
+}
+
+/* 搜索框前部文字 */
+
+
+.h-header .search .course-sel{
+  float: left;
+  height: 30px;
+  width: 66px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.h-header .search .course-sel:hover .course-menu{
+  display: block;
+
+}
+
+.h-header .search .course-menu li{
+  width: 66px;
+  border: 1px solid #e0e0e0 ;
+}
+
+.h-header .search .course-menu li:hover{
+  background-color: #e0e0e0;
+ 
+}
+
+
+.h-header .search .course-menu{
+  position: absolute;
+  left: -1px;
+  top:30px;
+  background-color: #fff;
+  display: none;
+}
+
+
+
+/* 搜索框倒三角 */
+.h-header .search .triangle-sel{
+  float: right;
+  margin: 12px 5px;
+}
+
+/* 搜索框 */
+.h-header .search .search-text{
+  display: inline-block;
+  height: 30px;
+  width: 400px;
+  line-height: 30px;
+  padding-left: 1em;
+  border: 1px solid #e0e0e0;
+}
+
+/* 搜索框与搜索框前部文字水平对齐 */
+
+
+/* 放大镜图标绝对定位 */
+.h-header .top-nav .search img{
+  position: absolute;
+  left: 450px;
+  top:15px;
+}
+/* ============================================================================================ */
+/* 网站主要导航区域 */
+
+.site-nav{
+  background-color:#3598db;
+
+}
+.site-nav-wrap{
+  margin: 0 auto;
+  width: 1190px;
+  height: 60px;
+  font-size: 16px;
+ 
+}
+
+.site-nav li,.site-nav a{
+  color: #ffffff;
+}
+
+/* 主要导航区主要导航条左浮动 */
+.site-nav-wrap .main-nav{
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+
+/* 主要导航区主要导航条li标签左浮动 */
+.site-nav-wrap .main-nav .main-nav-item{
+  float: left;
+}
+
+/* 设置a标签为块级元素，增加背景色 */
+.site-nav-wrap .main-nav .main-nav-list a{
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 22px;
+  border-radius: 3px;
+}
+
+.site-nav-wrap .main-nav .main-nav-list a:hover{
+  background-color: #2db0f9;
+}
+
+
+.site-nav-wrap .main-nav .main-nav-list .main-nav-item{
+  margin-right: 10px;
+}
+.site-nav-wrap .main-nav .main-nav-list .homepage-lable{
+  background-color:#2db0f9; 
+}
+
+
+/* 主要导航区侧导航条右浮动 */
+.site-nav-wrap .aside-nav{
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  background-color: red;
+}
+
+/* 主要导航区侧导航条li标签右浮动 */
+.site-nav-wrap .aside-nav .aside-nav-item{
+  float: right;
+  margin-left: 20px;
+}
+
+/* 右侧红色背景 */
+.bg-red-wrap{
+  margin-left: 1190px;
+  position: relative;
+}
+.bg-red{
+  height: 60px;
+  width: 50%;
+  background-color: red;
+  position: absolute;
+  top:0px;
+  right:0px;
+}
+
+/* ============================================================================================ */
+/* 网站banner区域 */
+.h-banner{
+  overflow: hidden;
+  width: 100%;
+  height: 404px;
+  background-color: #61caff;
+  position: relative;
+
+}
+.h-banner .banner-img{
+  width:100%;
+}
+
+.h-banner .slide-bar .slide-btn{
+  float: left;
+}
+
+.h-banner .slide-bar .slide-btn a{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* position坐标都用负数 */
+  background: url('../img/ico_circle.png') no-repeat -73px 0;
+  margin-right: 12px;
+}
+.h-banner .slide-btn a.cur-banner{
+  background: url('../img/ico_circle.png') no-repeat -58px -22px;
+}
+
+.h-banner .slide-btn a:hover{
+  background: url('../img/ico_circle.png') no-repeat -58px -22px;
+}
+
+/* 包含圆点的div */
+.h-banner .slide-bar{
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;  
+  top:376px;
+  width: 90px;
+  height: 14px; 
+}
+/* ======================================================================================= */
+/* 主要课程区域 */
+.main-area{  
+  margin: 0 auto;
+  width: 1190px;
+  padding-top: 40px;
+}
+.main-head{
+  font-size: 22px;
+  height: 22px;
+  color: #1a1a1a;
+}
+.main-course-title{
+  float: left;
+  padding-left: 18px;
+  height: 22px;
+  line-height: 22px;
+  border-left: 7px solid #2db0f9;
+}
+.main-area .main-head .title-more{
+  float: right;
+  line-height: 22px;
+  color: #5da7df;
+}
+/* 课程列表区域li标签 */
+.main-area .main-course-item{
+  padding-top: 30px;
+  margin: 0 14px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #1a1a1a;
+  float: left;
+}
+.main-body{
+  overflow: hidden;
+}
+
+/* 课程列表图片 */
+.main-area .main-course-item img{
+  height: 180px;
+  width: 207px;
+  border: 1px solid #e1e1e1;
+}
+
+.forblank{
+  margin: 0 auto;
+  width: 1190px;
+  padding-top: 40px;
+}
+
+/* 网站底部 */
+.footer{
+  height: 141px;
+  background-color: #373a43;
+  text-align: center;
+  padding-top: 44px;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+
+
+
